@@ -1,0 +1,23 @@
+<ion-view class="account-orders-view account-sub-view" cache-view="false" view-title="My Orders">
+  <ion-content>
+    <div class="orders-row">
+      <div class="card order-item" >
+        <div class="item item-divider order-header">
+          <span class="header-title">31/05/2016</span>
+        </div>
+        <div class="item item-text-wrap order-content">
+          <div class="row order-product" ng-repeat="idea in ['Demo','5 Ideas','Few Materials']">
+
+            <div class="col col-center name-col">
+              <span class="product-name">{{idea}}</span>
+            </div>
+
+          </div>
+        </div>
+        <div class="item item-divider order-footer delivered" >
+          <span class="status-title">Version 0.1 {{ideas}}</span>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

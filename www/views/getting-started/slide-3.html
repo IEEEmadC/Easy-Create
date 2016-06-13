@@ -1,0 +1,51 @@
+<div class="row question-row">
+  <div class="col">
+    <h2 class="question-title">Pick picture  for items  have in your home</h2>
+    <p class="question-paragraph">You can add or change them later</p>
+    <ion-scroll class="question-options-outer" direction="y">
+      <ion-list class="question-options">
+        <custom-checkbox ng-model="pick_categories.Plastic_bottle"  ng-click="select('Plastic Bottle')" title="Plastic Bottle">
+          <div class="category-item-wrapper">
+            <div class="category-item-content" ng-init="bg_img = './img/sample-images/getting-started/platis.1.png'">
+              <div multi-bg="[bg_img]" interval="3000" helper-class="category-with-image">
+              </div>
+            </div>
+          </div>
+        </custom-checkbox>
+        <custom-checkbox title="Shoebox" ng-click="select('Shoebox')" ng-model="pick_categories.shoebox">
+          <div class="category-item-wrapper">
+            <div class="category-item-content" ng-init="bg_img = './img/sample-images/getting-started/shoebox.png'">
+              <div multi-bg="[bg_img]" interval="3000" helper-class="category-with-image">
+              </div>
+            </div>
+          </div>
+        </custom-checkbox>
+        <custom-checkbox title="Straw" ng-click="select('Straw')" ng-model="pick_categories.straw">
+          <div class="category-item-wrapper">
+            <div class="category-item-content" ng-init="bg_img = './img/sample-images/getting-started/straw.png'">
+              <div multi-bg="[bg_img]" interval="3000" helper-class="category-with-image">
+              </div>
+            </div>
+          </div>
+        </custom-checkbox>
+
+        <custom-checkbox title="Motor" ng-click="select('Motor')" ng-model="pick_categories.motor">
+          <div class="category-item-wrapper">
+            <div class="category-item-content" ng-init="bg_img = './img/sample-images/getting-started/motor.png'">
+              <div multi-bg="[bg_img]" interval="3000" helper-class="category-with-image">
+              </div>
+            </div>
+          </div>
+        </custom-checkbox>
+        <custom-checkbox title="Battery" ng-click="select('Battery')" ng-model="pick_categories.Battery">
+          <div class="category-item-wrapper">
+            <div class="category-item-content" ng-init="bg_img = './img/sample-images/getting-started/battery.png'">
+              <div multi-bg="[bg_img]" interval="3000" helper-class="category-with-image">
+              </div>
+            </div>
+          </div>
+        </custom-checkbox>
+      </ion-list>
+    </ion-scroll>
+  </div>
+</div>

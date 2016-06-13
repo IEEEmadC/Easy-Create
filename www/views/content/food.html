@@ -1,0 +1,94 @@
+<ion-view class="food-content-view" cache-view="false">
+  <ion-header-bar class="food-content-header">
+    <div class="buttons">
+      <button class="button button-clear back-button" ng-click="goBack()">Back</button>
+    </div>
+    <h1 class="title">{{product.name}}</h1>
+    <div class="buttons">
+      <button class="button button-clear share-button"  ui-sref="main.app.feed.fashion">Menu</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <ion-slide-box class="product-images-slider" show-pager="false">
+      <ion-slide>
+        <div class="image-container" multi-bg="[product.pictures[0]]">
+          <div class="product-illustration-container">
+            <iframe width='100%' height='100%' ng-src="{{youtube(product)}}"frameborder="0"></iframe>
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide ng-repeat="product_image in product.pictures.slice(1) track by $index">
+        <div class="image-container" multi-bg="[product_image]"></div>
+      </ion-slide>
+    </ion-slide-box>
+    <div class="row brief-info-row">
+      <div class="col col-80">
+        <h3 class="product-name">{{product.name}}</h3>
+        <h5 class="product-style">{{product.description}}</h5>
+      </div>
+
+
+    </div>
+
+
+
+    <hr class="product-sections-divider"/>
+
+    <div class="row upload-row">
+      <div class="col">
+        <button class="button button-block upload-photo-button" ng-click="uploadPhoto()">
+         Share app
+        </button>
+      </div>
+    </div>
+    <hr class="product-sections-divider"/>
+
+    <article class="row review-item" >
+    	<div class="col">
+    		<div class="row top-row">
+    			<div class="col image-col">
+            <pre-img ratio="_1_1">
+              <img class="review-image" ng-src="img/me2.jpg" spinner-on-load>
+            </pre-img>
+    			</div>
+    			<div class="col description-col">
+    				<h3 class="review-author-name">Manuel alba</h3>
+
+
+    			</div>
+    			<div class="col reputation-col">
+    				<span class="review-date">{{'31/05/2016' | amDateFormat:'YYYY, MMM Do'}}</span>
+            <div class="rating-outer">
+              <span class="review-rating rating-{{ product.rating | floor }}">{{product.rating}}</span>
+            </div>
+    			</div>
+    		</div>
+    		<div class="row middle-row">
+    			<div class="col">
+    				<p class="review-description">
+    					<strong >For this activity you need these items:</strong>
+
+            <ul class="list-group">
+              <li class="list-group-item" ng-repeat="item in product.Materials_eng">{{item}}</li>
+
+            </ul>
+
+    				</p>
+    			</div>
+    		</div>
+
+    	</div>
+    </article>
+
+    <h5 class="incorrect-info-title">Is the information incorrect?</h5>
+    <span class="incorrect-info-sub-title">Let us know what's wrong!</span>
+    <div class="row write-review-row">
+    	<div class="col">
+    		<a class="button button-block new-review-button" ng-href="mailto:malba@mmae.cl?subject=IEEE APP Idea : {{product.name}}">
+    			Write a email
+    		</a>
+    	</div>
+    </div>
+
+  </ion-content>
+</ion-view>

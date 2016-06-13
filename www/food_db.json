@@ -1,0 +1,66 @@
+{
+  "products": [
+
+    {
+    "name" :  "Electric Car",
+    "description": "How to make a homemade electric car",
+    "nombre":  "",
+      "img":"./img/car.jpg",
+    "descripcion": "",
+    "youtube_eng": "UnxNe_XjlWg",
+    "youtube_esp": "",
+    "Materials_eng":  ["Plastic bottle","Scissors","Skewer","Straw","Cap","Bottleneck","Cocodriles engine","Motor","Battery","Silicone gun"],
+    "Materiales_esp": []
+    }
+    ,
+    {
+    "name" :  "Flashlight",
+    "description": "How to make a flashlight",
+    "nombre":  "",
+      "img":"./img/flashlight.jpg",
+    "descripcion": "",
+    "youtube_eng": "tSiYfBBtW6Q",
+    "youtube_esp": "",
+    "Materials_eng":  ["Paper","Scissors","Wire","Led diode","Battery","Duct tape"],
+    "Materiales_esp": []
+    }
+    ,
+    {
+    "name" :  "Robot Hand",
+    "description": "How to make a robot hand",
+    "nombre":  "",
+      "img":"./img/robot.png",
+    "descripcion": "",
+    "youtube_eng": "9uvRBNtGcnI",
+    "youtube_esp": "",
+    "Materials_eng":  ["Straw","String","Roll of toilet paper","Glove","Tape","Felt pen","Scissors"],
+    "Materiales_esp": []
+    }
+    ,
+    {
+    "name" :  "Periscope",
+    "description": "How to make a homemade periscope",
+    "nombre":  "",
+      "img":"./img/persicope.jpg",
+    "descripcion": "",
+    "youtube_eng": "F_j_BkYcF4c",
+    "youtube_esp": "",
+    "Materials_eng":  ["Ruler","Cardboard","Mirrors","Silicone gun"],
+    "Materiales_esp": []
+    }
+    ,
+
+    {
+    "name" :  "Smartphone Projector",
+    "description": "How build a smartphone with a shoebox",
+    "nombre":  "",
+      "img":"./img/Smartphone.jpg",
+    "descripcion": "",
+    "youtube_eng": "Tx4vPeL9y2g",
+    "youtube_esp": "",
+    "Materials_eng":  ["Shoebox","Magnifing glass","Board","Roll of masking tape","Scalpel","Silicone gun","Ruler"],
+    "Materiales_esp": []
+    }
+
+  ]
+}
